@@ -1,0 +1,272 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Flasher-mod
+LIBS:Flasher-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LED D1
+U 1 1 5851CF9B
+P 1250 1500
+F 0 "D1" H 1250 1600 50  0000 C CNN
+F 1 "LED" H 1250 1400 50  0000 C CNN
+F 2 "LEDs:LED-5MM" H 1250 1500 50  0001 C CNN
+F 3 "" H 1250 1500 50  0000 C CNN
+	1    1250 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D2
+U 1 1 5851D045
+P 2450 1500
+F 0 "D2" H 2450 1600 50  0000 C CNN
+F 1 "LED" H 2450 1400 50  0000 C CNN
+F 2 "LEDs:LED-5MM" H 2450 1500 50  0001 C CNN
+F 3 "" H 2450 1500 50  0000 C CNN
+	1    2450 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R1
+U 1 1 5851D07F
+P 1250 1850
+F 0 "R1" V 1330 1850 50  0000 C CNN
+F 1 "470" V 1250 1850 50  0000 C CNN
+F 2 "Resistors_THT:Resistor_Horizontal_RM10mm" V 1180 1850 50  0001 C CNN
+F 3 "" H 1250 1850 50  0000 C CNN
+	1    1250 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 5851D0B1
+P 2450 1850
+F 0 "R4" V 2530 1850 50  0000 C CNN
+F 1 "470" V 2450 1850 50  0000 C CNN
+F 2 "Resistors_THT:Resistor_Horizontal_RM10mm" V 2380 1850 50  0001 C CNN
+F 3 "" H 2450 1850 50  0000 C CNN
+	1    2450 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 5851D107
+P 1950 1850
+F 0 "R3" V 2030 1850 50  0000 C CNN
+F 1 "100k" V 1950 1850 50  0000 C CNN
+F 2 "Resistors_THT:Resistor_Horizontal_RM10mm" V 1880 1850 50  0001 C CNN
+F 3 "" H 1950 1850 50  0000 C CNN
+	1    1950 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 5851D13E
+P 1700 1850
+F 0 "R2" V 1780 1850 50  0000 C CNN
+F 1 "100k" V 1700 1850 50  0000 C CNN
+F 2 "Resistors_THT:Resistor_Horizontal_RM10mm" V 1630 1850 50  0001 C CNN
+F 3 "" H 1700 1850 50  0000 C CNN
+	1    1700 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C1
+U 1 1 5851D1EC
+P 1400 2150
+F 0 "C1" H 1425 2250 50  0000 L CNN
+F 1 "10uF" H 1425 2050 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D5_L6_P2.5" H 1438 2000 50  0001 C CNN
+F 3 "" H 1400 2150 50  0000 C CNN
+	1    1400 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CP C2
+U 1 1 5851D240
+P 2300 2150
+F 0 "C2" H 2325 2250 50  0000 L CNN
+F 1 "10uF" H 2325 2050 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D5_L6_P2.5" H 2338 2000 50  0001 C CNN
+F 3 "" H 2300 2150 50  0000 C CNN
+	1    2300 2150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1700 1700 1700 1300
+Wire Wire Line
+	1950 1300 1950 1700
+Wire Wire Line
+	1550 2150 2150 2550
+Wire Wire Line
+	1550 2550 2150 2150
+Wire Wire Line
+	1250 2000 1250 2350
+Connection ~ 1250 2150
+Wire Wire Line
+	2450 2000 2450 2350
+Connection ~ 2450 2150
+Wire Wire Line
+	1700 2000 1700 2550
+Wire Wire Line
+	1700 2550 1550 2550
+Wire Wire Line
+	1950 2000 1950 2550
+Wire Wire Line
+	1950 2550 2150 2550
+Connection ~ 2150 2550
+Connection ~ 1550 2550
+$Comp
+L PN2222A Q2
+U 1 1 5851F371
+P 2350 2550
+F 0 "Q2" H 2550 2625 50  0000 L CNN
+F 1 "2N3904" H 2550 2550 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Rugged" H 2550 2475 50  0001 L CIN
+F 3 "" H 2350 2550 50  0000 L CNN
+	1    2350 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L PN2222A Q1
+U 1 1 5851FC24
+P 1350 2550
+F 0 "Q1" H 1550 2625 50  0000 L CNN
+F 1 "2N3904" H 1550 2550 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Rugged" H 1550 2475 50  0001 L CIN
+F 3 "" H 1350 2550 50  0000 L CNN
+	1    1350 2550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 58549C5C
+P 3150 2750
+F 0 "#PWR01" H 3150 2500 50  0001 C CNN
+F 1 "GND" H 3150 2600 50  0000 C CNN
+F 2 "" H 3150 2750 50  0000 C CNN
+F 3 "" H 3150 2750 50  0000 C CNN
+	1    3150 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L +9V #PWR02
+U 1 1 5854A30C
+P 3150 1300
+F 0 "#PWR02" H 3150 1150 50  0001 C CNN
+F 1 "+9V" H 3150 1440 50  0000 C CNN
+F 2 "" H 3150 1300 50  0000 C CNN
+F 3 "" H 3150 1300 50  0000 C CNN
+	1    3150 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 1300 3150 1300
+Connection ~ 1700 1300
+Connection ~ 1950 1300
+Connection ~ 2450 1300
+$Comp
+L Battery BT1
+U 1 1 5854C14B
+P 3150 1900
+F 0 "BT1" H 3250 1950 50  0000 L CNN
+F 1 "9V Battery" H 3250 1850 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" V 3150 1940 50  0001 C CNN
+F 3 "" V 3150 1940 50  0000 C CNN
+	1    3150 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 1300 3150 1750
+Wire Wire Line
+	3150 2750 3150 2050
+Wire Wire Line
+	1250 2750 3150 2750
+Connection ~ 2450 2750
+$Comp
+L PWR_FLAG #FLG03
+U 1 1 5854C3E3
+P 4000 1250
+F 0 "#FLG03" H 4000 1345 50  0001 C CNN
+F 1 "PWR_FLAG" H 4000 1430 50  0000 C CNN
+F 2 "" H 4000 1250 50  0000 C CNN
+F 3 "" H 4000 1250 50  0000 C CNN
+	1    4000 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG04
+U 1 1 5854C40D
+P 4000 1900
+F 0 "#FLG04" H 4000 1995 50  0001 C CNN
+F 1 "PWR_FLAG" H 4000 2080 50  0000 C CNN
+F 2 "" H 4000 1900 50  0000 C CNN
+F 3 "" H 4000 1900 50  0000 C CNN
+	1    4000 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L +9V #PWR05
+U 1 1 5854C72B
+P 4300 1250
+F 0 "#PWR05" H 4300 1100 50  0001 C CNN
+F 1 "+9V" H 4300 1390 50  0000 C CNN
+F 2 "" H 4300 1250 50  0000 C CNN
+F 3 "" H 4300 1250 50  0000 C CNN
+	1    4300 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 5854C757
+P 4000 1900
+F 0 "#PWR06" H 4000 1650 50  0001 C CNN
+F 1 "GND" H 4000 1750 50  0000 C CNN
+F 2 "" H 4000 1900 50  0000 C CNN
+F 3 "" H 4000 1900 50  0000 C CNN
+	1    4000 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 1250 4300 1250
+$EndSCHEMATC
