@@ -1,3 +1,3 @@
 # hackyflasher
 
-![alt text][PCB-Front.png]
+Soldering Workshop Board for Hobart Hackerspace.
