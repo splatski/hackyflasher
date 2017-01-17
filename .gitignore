@@ -1,0 +1,10 @@
+#
+# Ignore .bak files
+#
+*.bak
+*.kicad_pcb-bak
+
+*.zip
+*._project.zofzproj
+*.png
+
