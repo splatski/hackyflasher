@@ -1,6 +1,6 @@
 # Hacky Flasher
 
-![Image of Hacky Flasher Front](https://splatski.github.io/hackyflasher/PCB-Front.png)![Image of Hacky Flasher Front](https://splatski.github.io/hackyflasher/PCB-Back.png)
+![Image of Hacky Flasher Front](https://splatski.github.io/hackyflasher/PCB-Front.png) ![Image of Hacky Flasher Front](https://splatski.github.io/hackyflasher/PCB-Back.png)
 
 Soldering Workshop Board for Hobart Hackerspace.
 
